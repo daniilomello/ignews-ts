@@ -1,3 +1,4 @@
+import { SignInButton } from '../signin-button/signin-button.component';
 import Image from 'next/image';
 import styles from './header.module.scss';
 
@@ -11,6 +12,8 @@ export const Header = () => {
           <a href="#" className={styles.active}>Home</a>
           <a href="#">Posts</a>
         </nav>
+
+        <SignInButton />
       </div>
     </header>
   )
