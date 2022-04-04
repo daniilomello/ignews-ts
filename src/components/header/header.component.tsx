@@ -9,8 +9,8 @@ export const Header = () => {
         <Image src="/images/logo.svg" alt="ig news logo" width="100" height="40"/>
 
         <nav>
-          <a href="#" className={styles.active}>Home</a>
-          <a href="#">Posts</a>
+          <a href="/" className={styles.active}>Home</a>
+          <a href="/posts">Posts</a>
         </nav>
 
         <SignInButton />
