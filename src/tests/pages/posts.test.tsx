@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react';
-import { mocked } from 'ts-jest/utils';
 import { getPrismicClient } from '../../services/prismic.config'
 import Posts, { getStaticProps }  from '../../pages/posts';
 
@@ -22,7 +21,7 @@ describe('Posts Page', () => {
   })
 
   it('loading initial data', async () => {
-    const getPrismicClientMocked = mocked(getPrismicClient);
+    const getPrismicClientMocked = jest.mocked(getPrismicClient);
 
     getPrismicClientMocked.mockReturnValueOnce({
       query: jest.fn().mockResolvedValueOnce({
