@@ -8,7 +8,4 @@ module.exports = {
   moduleNameMapper: {
     "\\.(scss|css|sass)$": "identity-obj-proxy",
   },
-  "ts-jest": {
-    isolatedModules: false,
-  },
 };
